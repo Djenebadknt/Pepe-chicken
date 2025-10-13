@@ -1,36 +1,71 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title> pepe chicken</title>
-        <link href="style.css" rel="stylesheet"/>
-    </head>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Pépé Chicken</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <!-- En-tête du site -->
+    <header id="menu">
+        <h1>Pépé Chicken</h1>
+        <p class="slogan">Le meilleur poulet de la ville !</p>
+    </header>
 
- <body> 
-    <div id="menu">
-        <main>
-    <h1></h1>
-    <h1> Djénéba</h1>
+    <!-- Navigation -->
+    <nav>
+        <a href="index.html">Accueil</a>
+        <a href="formulaire.html">Contact</a>
+    </nav>
+
+    <!-- Contenu principal -->
+    <main>
+        <section class="formulaire-section">
+            <h2>Contactez-nous</h2>
+            <p>Une question ? Une réservation ? Remplissez le formulaire ci-dessous !</p>
+            
+            <!-- Formulaire de contact -->
+            <form>
+                <label for="nom">Nom :</label>
+                <input type="text" id="nom" name="nom" required>
+
+                <label for="prenom">Prénom :</label>
+                <input type="text" id="prenom" name="prenom" required>
+
+                <label for="email">Email :</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="telephone">Téléphone :</label>
+                <input type="tel" id="telephone" name="telephone">
+
+                <label for="sujet">Sujet :</label>
+                <select id="sujet" name="sujet">
+                    <option value="reservation">Réservation</option>
+                    <option value="question">Question</option>
+                    <option value="reclamation">Réclamation</option>
+                    <option value="autre">Autre</option>
+                </select>
+
+                <label for="message">Message :</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+
+                <button type="submit">Envoyer</button>
+            </form>
+        </section>
+
+        <!-- Informations de contact -->
+        <section class="info-contact">
+            <h3>Nos coordonnées</h3>
+            <p><strong>Adresse :</strong> 123 Rue de la République, 75001 Paris</p>
+            <p><strong>Téléphone :</strong> 01 23 45 67 89</p>
+            <p><strong>Email :</strong> contact@pepechicken.fr</p>
+        </section>
     </main>
-</div>
-        <img src="D:\Users\ddiallo\Pictures\spiderman.jpg" alt="Ma photo" width="300" align="right">
-        <h2>Linkedin: <a href="https://www.linkedin.com/in/dj%C3%A9n%C3%A9ba-dknt-09b469385/">Profil</a> </h1>
-    </main>
-        <h2>COMPETENCES</h2>
-<ul>
-    <li>Maitrise des licences bureautique </li>
-    <li>Organisation</li>
-    <li>Code</li>
-</ul>
 
-<h2>FORMATIONS</h2>
-
-<ul>
-    <li>2025-2026: <a href="https://pia.ac-paris.fr/serail/jcms/s2_271354/fr/accueil"> BTS SIO (Lycée Turgot-Paris)</a></li>
-    <li>2023-2025: <a href="https://lyceepicasso.org/">Bac technologique - STMG (Lycée Pablo Picasso - Fontenay-sous-bois)</a></li>
-</ul>
-
-
+    <!-- Pied de page -->
+    <footer>
+        <p>&copy; 2025 Pépé Chicken - Tous droits réservés</p>
+    </footer>
 </body>
 </html>
